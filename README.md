@@ -17,7 +17,7 @@ PHP 輕框架,
 
 ## 備份網址
 
-  * [Slim3](https://gitbook.fu-ming.tw/slim/_book/index.html)
+  * [Slim3](https://gitbook.fu-ming.tw/slim/index.html)
 
 ## 更新 
 
