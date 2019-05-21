@@ -20,9 +20,9 @@ $config = [
   'addContentLengthHeader' => false,
   'db' => [
     'host'   => 'localhost',
-    'user'   => 'myUsername',
-    'pass'   => 'myPassword',
-    'dbname' => 'database'
+    'user'   => '{username}',
+    'pass'   => '{password}',
+    'dbname' => '{dbname}'
   ],
   'logger' => [
     'name'  => 'slim-app',
@@ -31,7 +31,7 @@ $config = [
   ],
 ];
 
-$app       = new Slim\App([ 'settings' => $config ]);
+$app = new Slim\App([ 'settings' => $config ]);
 $container = $app->getContainer();
 
 $app->get('/', function (REQUEST $request, RESPONSE $response, $args) {

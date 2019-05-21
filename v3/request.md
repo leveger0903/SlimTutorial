@@ -1,4 +1,4 @@
-# Slim 3 Request
+# Slim 3 請求
 
 ## 第一個 Request 呼叫
 
@@ -30,7 +30,7 @@ $app = new Slim\App;
 
 # 中間層
 $app->add(function (REQUEST $request, RESPONSE $response, $next) {
-  $response->write('Middleware do something. ');
+  $response->write('Middleware do something.');
   return $next($request, $response);
 }); 
 
@@ -46,25 +46,31 @@ $app->run();
 ## 請求方法
 
 ````
-# GET方法
+# GET方法(READ)
 $app->get('/foo', function (REQUEST $request, RESPONSE $response) {
   $response->write('Route do something.');
   return $response;
 });
 
-# POST方法
+# POST方法(CREATE)
 $app->post('/foo', function (REQUEST $request, RESPONSE $response) {
   $response->write('Route do something.');
   return $response;
 });
 
-# PUT方法
+# PUT方法(CREATE + UPDATE)
 $app->put('/foo', function (REQUEST $request, RESPONSE $response) {
   $response->write('Route do something.');
   return $response;
 });
 
-# DELETE方法
+# PATCH方法(UPDATE)
+$app->patch('/foo', function (REQUEST $request, RESPONSE $response) {
+  $response->write('Route do something.');
+  return $response;
+});
+
+# DELETE方法(DELETE)
 $app->delete('/foo', function (REQUEST $request, RESPONSE $response) {
   $response->write('Route do something.');
   return $response;

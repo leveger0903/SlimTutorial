@@ -78,17 +78,17 @@ $app = new Slim\App();
 $container = $app->getContainer();
 $container['view'] = new Slim\Views\PhpRenderer('src/template/');
 
-// 使用方法
+# 使用方法
 $app->get('/tickets', function ($request, $response, $args) {
 
-  // 測試服務是否存在
+  # 測試服務是否存在
   if($this->has('view'))
     echo 'view service exist';
 
-  // 顯式取得服務
+  # 顯式取得服務
   $response = $this->get('view')->render($response, 'tickets.php');
 
-  // 隱式取得服務
+  # 隱式取得服務
   $response = $this->view->render($response, 'template.php');
   return $response;
 

@@ -1,4 +1,4 @@
-# Slim 3 Response
+# Slim 3 響應
 
 ## 第一個 Request 呼叫 + 中間層
 
@@ -76,7 +76,7 @@ $newResponse = $response->withoutHeader('Allow');
 $body = $response->getBody();
 $body->write('Hello World');
 
-$detail = $body->getSize(); // Slim 3 舊版不能用?方法用錯?
+$detail = $body->getSize(); # Slim 3 舊版不能用?方法用錯?
 $detail = $body->tell();
 $detail = $body->eof();
 $detail = $body->isSeekable();

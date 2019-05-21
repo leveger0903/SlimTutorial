@@ -6,10 +6,12 @@
 require 'vendor/autoload.php';
 
 $app = new Slim\App();
+
 $app->get('/{name}/{weekday}', function ($request, $response, $args) {
   $response->write("Hello, " . $args['name'] . ", this is " . $args['weekday']);
   return $response;
 });
+
 $app->run();
 ````
 
@@ -22,9 +24,9 @@ $config = [
   'addContentLengthHeader' => false,
   'db' => [
     'host'   => 'localhost',
-    'user'   => 'myUsername',
-    'pass'   => 'myPassword',
-    'dbname' => 'database'
+    'user'   => '{username}',
+    'pass'   => '{password}',
+    'dbname' => '{dbname}'
   ]
 ];
 $app = new Slim\App([ 'settings' => $config ]);
@@ -40,6 +42,24 @@ spl_autoload_register(function ($classname) {
 $mySampleClass = new myCustomClass();
 echo $mySampleClass->response();
 ````
+
+## 透過 composer.json 自動載入自己的類
+
+```
+{
+    "require": {
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "robmorgan/phinx": "^0.5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "classes/"
+        }
+    }
+}
+```
 
 ## 加入依賴容器注入 (Dependency Injection Container)
 
