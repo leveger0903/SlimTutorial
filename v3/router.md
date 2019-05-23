@@ -114,6 +114,14 @@ $app->map(
 $app->run();
 ````
 
+## 以特定 HTTP 代碼轉址路由
+
+````
+$app = new Slim\App();
+$app->redirect('/books', '/library', 301);
+$app->run();
+````
+
 ## 路由使用自訂義class代替閉包實作(需使用__invoke())
 
 ````

@@ -95,9 +95,24 @@ $request->isOptions();   // true.false
 
 ## 請求 URI
 
+一個 URI 網址通常會有以下部分.
+
+- 協定(http | https)
+- 網域(example.com)
+- 埠號(80 | 443)
+- 路徑(/users/1)
+- 查詢字串(sort=created&dir=asc)
+
+他們均可透過 getUri 方法
+
+````
+$uri = $request->getUri();
+````
+
+其他方法
+
 ````
 $params = $request->getQueryParams();
-$uri    = $request->getUri();
 
 $scheme    = $uri->getScheme();
 $authority = $uri->getAuthority();

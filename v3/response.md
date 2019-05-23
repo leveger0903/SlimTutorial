@@ -103,3 +103,10 @@ $newResponse = $response->withJson($data);
 # 返回特定的代碼
 $newResponse = $response->withJson($data, 204);
 ````
+
+## 返回轉址
+
+````
+# 以 301 方式轉址至 /new-url 新網址
+return $response->withRedirect('/new-url', 301);
+````
