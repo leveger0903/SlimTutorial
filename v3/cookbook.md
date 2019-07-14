@@ -319,9 +319,3 @@ class NotFound
   }
 }
 ````
-
-## CORS (簡易版)
-
-## 模擬環境設定
-## 使用 POST 方法上傳檔案
-## 動作域響應器(Action-Domain-Responder)
