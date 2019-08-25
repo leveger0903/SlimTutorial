@@ -2,7 +2,7 @@
 
 ## 概觀 (Overview)
 
-你的 Slim 應用程序陸游與中間層將獲得一個 PSR-7 請求物件, 該物件表示你的 web 伺服器收到當前的 HTTP 請求. 請求物件是由 PSR-7 ServerRequestInterface 實作, 你可以使用它來查看或操作 HTTP 請求方法, 表頭與主體.
+你的 Slim 應用程序路由與中間層將獲得一個 PSR-7 請求物件, 該物件表示你的 web 伺服器收到當前的 HTTP 請求. 請求物件是由 PSR-7 ServerRequestInterface 實作, 你可以使用它來查看或操作 HTTP 請求方法, 表頭與主體.
 
 ### 如何取得請求物件
 
