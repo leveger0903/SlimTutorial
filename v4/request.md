@@ -243,7 +243,7 @@ Psr\Http\Message\StreamInterface 提供以下的方法來基於 PHP 資源庫的
   - tell()
   - eof()
   - isSeekable()
-  - seek
+  - seek()
   - rewind()
   - isWritable()
   - write($string)
