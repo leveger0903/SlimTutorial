@@ -27,8 +27,8 @@ PHP 輕框架,
 
 ## 備份網址
 
-  * [Slim3](https://gitbook.fu-ming.tw/slim/index.html)
+  * [Slim](https://gitbook.fu-ming.tw/slim/index.html)
 
 ## 更新 
 
-*date : 2018-11-14*
+*date : 2019-11-10*

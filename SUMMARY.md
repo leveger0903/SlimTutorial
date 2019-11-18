@@ -1,5 +1,3 @@
-# Summary
-
 * version 3
   * [basic](v3/basic.md)
   * [concepts](v3/concepts.md)
